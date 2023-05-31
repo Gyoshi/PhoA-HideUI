@@ -6,9 +6,6 @@ using UnityModManagerNet;
 
 namespace HideUI
 {
-#if DEBUG
-    [EnableReloading]
-#endif
     internal static class Main
     {
         public static Harmony harmony;
