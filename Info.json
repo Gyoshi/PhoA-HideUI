@@ -1,0 +1,10 @@
+﻿{
+  "Id": "HideUI",
+  "DisplayName": "Hide User Interface",
+  "Author": "Gyoshi",
+  "Version": "0.0.0",
+  "GameVersion": "1.3.3",
+  "AssemblyName": "HideUI.dll",
+  "EntryMethod": "HideUI.Main.Load",
+  "HomePage": "https://github.com/Gyoshi/PhoA-HideUI"
+}
