@@ -16,6 +16,7 @@ namespace HideUI
             logger = modEntry.Logger;
 
             modEntry.OnToggle = OnToggle;
+            modEntry.OnUpdate = OnUpdate;
 
             harmony = new Harmony(modEntry.Info.Id);
             harmony.PatchAll();
@@ -35,6 +36,10 @@ namespace HideUI
             if (active) { Load(modEntry); }
             else { return Unload(modEntry); }
             return true;
+        }
+        static void OnUpdate(UnityModManager.ModEntry modEntry, float dt)
+        {
+            SetHud(false);
         }
 
         public static void SetHud(bool visible)
